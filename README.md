@@ -2,19 +2,17 @@
 
 Still under construction.
 
-This is the implementation for the following paper:
+This is the implementation for the following ACL 2019 paper:
 
 Duality of Link Prediction and Entailment Graph Induction, Mohammad Javad Hosseini, Shay B. Cohen, Mark Johnson, and Mark Steedman. Association for Computational Linguistics (ACL 2019).
 
+### Setup
 
-
-Step 1. Setup
-
-clone the project.
+**clone the project**
 git clone https://github.com/mjhosseini/linkpred_entgraph.git
 cd linkpred_entgraph
 
-Install requirements.
+**Install requirements**
 
 pip install scipy
 pip install torch
@@ -28,7 +26,7 @@ python -m nltk.downloader wordnet
 python -m nltk.downloader verbnet
 python -m nltk.downloader stopwords
 
-Prepare the data:
+**Prepare the data**
 
 Download the extracted binary relations from the NewsSpike corpus into convE/data:
 cd convE/data
@@ -46,12 +44,13 @@ python convE/wrangle_KG.py NS
 python convE/wrangle_KG.py NS_probs_train
 python convE/wrangle_KG.py NS_probs_all
 
+### Running the code
 
-Step 2. Training the link prediction model
+**Training the link prediction model**
 
-train convE model:
+Train convE model by running:
 
-CUDA_VISIBLE_DEVICES=0 python3 convE/main.py model ConvE input_drop 0.2 hidden_drop 0.3 feat_drop 0.2 lr 0.003 lr_decay 0.995 dataset NS process True  mode train	
+    CUDA_VISIBLE_DEVICES=0 python3 convE/main.py model ConvE input_drop 0.2 hidden_drop 0.3 feat_drop 0.2 lr 0.003 lr_decay 0.995 dataset NS process True  mode train	
 
 Step 3: Computing triple (link) probabilities for seen and unseen triples
 
@@ -74,6 +73,8 @@ on all triples
 
 python randWalk/randWalkMatFactory.py --probs_file_path NS_probs_all.txt --triples_path convE/data/NS/all.txt --max_new_args 0 --entgraph_path typedEntGrDir_NS_all_MC
 python randWalk/randWalkMatFactory.py --probs_file_path NS_probs_all.txt --triples_path convE/data/NS/all.txt --max_new_args 50 --entgraph_path typedEntGrDir_NS_all_AUG_MC
+
+### Evaluation
 
 Step 5: Evaluate the entailment graphs
 
