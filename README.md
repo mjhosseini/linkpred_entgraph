@@ -58,7 +58,7 @@ On all triples:
 
     CUDA_VISIBLE_DEVICES=0 python3 convE/main.py model ConvE input_drop 0.2 hidden_drop 0.3 feat_drop 0.2 lr 0.003 lr_decay 0.995 dataset NS_probs_all process True  mode probs probs_file_path NS_probs_all.txt
 
-Step 4: Building the entailment graphs
+Building the entailment graphs
 
 Only for training triples:
 
@@ -72,11 +72,11 @@ On all triples:
 
 ### Evaluation
 
-Step 5: Evaluate the entailment graphs
+Evaluate the entailment graphs
 
 Please refer to https://github.com/mjhosseini/entgraph_eval. Use the learned entailment graphs (typedEntGrDir_NS_all_MC or typedEntGrDir_NS_all_AUG_MC) as the gpath parameter.
 
-Step 6: Improve link prediction with entailment graphs
+Improve link prediction with entailment graphs
 
 Using entailment graphs with the Marcov Chain model (random walk):
 
