@@ -89,11 +89,11 @@ Using entailment graphs with the Marcov Chain model (random walk) + augmentation
 
 If you found this codebase useful, please cite:
 
-@inproceedings{hosseini2019duality,
-  title={Duality of Link Prediction and Entailment Graph Induction},
-  author={Hosseini, Mohammad Javad and Cohen, Shay B and Johnson, Mark and Steedman, Mark},
-  booktitle={Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics},
-  pages={4736--4746},
-  year={2019}
-}
+    @inproceedings{hosseini2019duality,
+      title={Duality of Link Prediction and Entailment Graph Induction},
+      author={Hosseini, Mohammad Javad and Cohen, Shay B and Johnson, Mark and Steedman, Mark},
+      booktitle={Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics},
+      pages={4736--4746},
+      year={2019}
+    }
 
