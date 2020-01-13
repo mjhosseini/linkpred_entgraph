@@ -1,10 +1,10 @@
 This is the implementation for the following ACL 2019 paper:
 
-Duality of Link Prediction and Entailment Graph Induction, Mohammad Javad Hosseini, Shay B. Cohen, Mark Johnson, and Mark Steedman. Association for Computational Linguistics (ACL 2019).
+**Duality of Link Prediction and Entailment Graph Induction**, Mohammad Javad Hosseini, Shay B. Cohen, Mark Johnson, and Mark Steedman. Association for Computational Linguistics (ACL 2019).
 
-### Setup
+## Setup
 
-**clone the project** 
+### clone the project
 
     git clone https://github.com/mjhosseini/linkpred_entgraph.git
 
