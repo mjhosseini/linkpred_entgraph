@@ -8,13 +8,13 @@ This is the implementation of the following ACL 2019 paper:
 
     git clone https://github.com/mjhosseini/linkpred_entgraph.git
     cd linkpred_entgraph/
-    sh requirements.sh
+    sh scripts/requirements.sh
 
 ### Preparing the data
 
 Download the extracted binary relations from the NewsSpike corpus into convE/data folder:
     
-    sh data.sh
+    sh scripts/data.sh
 
 ## Running the code
 
@@ -23,6 +23,10 @@ Download the extracted binary relations from the NewsSpike corpus into convE/dat
 Train ConvE model by running:
 
     CUDA_VISIBLE_DEVICES=0 python3 convE/main.py model ConvE input_drop 0.2 hidden_drop 0.3 feat_drop 0.2 lr 0.003 lr_decay 0.995 dataset NS process True epochs 80 mode train
+    
+Alternatively, you can copy the pre-trained model on the NewsSpike corpus:
+
+    sh scripts/dl_pretrained.sh
 
 ### Computing triple (link) probabilities for seen and unseen triples
 
