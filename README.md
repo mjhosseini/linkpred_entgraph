@@ -10,7 +10,7 @@ This is the implementation of the following ACL 2019 paper:
     cd linkpred_entgraph/
     sh requirements.sh
 
-### Prepare the data
+### Preparing the data
 
 Download the extracted binary relations from the NewsSpike corpus into convE/data folder:
     
@@ -26,7 +26,7 @@ Train convE model by running:
 
 ### Computing triple (link) probabilities for seen and unseen triples
 
-** Only for training triples: **
+** Only on training triples: **
 
     CUDA_VISIBLE_DEVICES=0 python3 convE/main.py model ConvE input_drop 0.2 hidden_drop 0.3 feat_drop 0.2 lr 0.003 lr_decay 0.995 dataset NS_probs_train process True  mode probs probs_file_path NS_probs_train.txt
 
