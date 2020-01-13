@@ -36,6 +36,8 @@ Train ConvE model by running:
 
 ### Building the entailment graphs
 
+Build the entailment graphs by the Marcov Chain model (random walk) as well as the Marcov Chain model (random walk) + augmentation with new scores. The former is done by --max_new_args 0 and the latter is done by --max_new_args 50. 
+
 **Only for training triples:**
 
     python randWalk/randWalkMatFactory.py --probs_file_path NS_probs_train.txt --triples_path convE/data/NS/train.txt --max_new_args 0 --entgraph_path typedEntGrDir_NS_train_MC
