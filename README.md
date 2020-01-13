@@ -32,11 +32,11 @@ Alternatively, you can copy the pre-trained model on the NewsSpike corpus:
 
 **Only on training triples:**
 
-    CUDA_VISIBLE_DEVICES=0 python3 convE/main.py model ConvE input_drop 0.2 hidden_drop 0.3 feat_drop 0.2 lr 0.003 lr_decay 0.995 dataset NS_probs_train process True  mode probs probs_file_path NS_probs_train.txt
+    CUDA_VISIBLE_DEVICES=0 python3 convE/main.py model ConvE input_drop 0.2 hidden_drop 0.3 feat_drop 0.2 lr 0.003 lr_decay 0.995 dataset NS_probs_train process True mode probs probs_file_path NS_probs_train.txt
 
 **On all triples:**
 
-    CUDA_VISIBLE_DEVICES=0 python3 convE/main.py model ConvE input_drop 0.2 hidden_drop 0.3 feat_drop 0.2 lr 0.003 lr_decay 0.995 dataset NS_probs_all process True  mode probs probs_file_path NS_probs_all.txt
+    CUDA_VISIBLE_DEVICES=0 python3 convE/main.py model ConvE input_drop 0.2 hidden_drop 0.3 feat_drop 0.2 lr 0.003 lr_decay 0.995 dataset NS_probs_all process True mode probs probs_file_path NS_probs_all.txt
 
 ### Building the entailment graphs
 
