@@ -6,7 +6,7 @@ Duality of Link Prediction and Entailment Graph Induction, Mohammad Javad Hossei
 
 ### Setup
 
-**clone the project**
+**clone the project** 
 
     git clone https://github.com/mjhosseini/linkpred_entgraph.git
 
