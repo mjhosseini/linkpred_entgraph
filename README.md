@@ -22,7 +22,7 @@ Download the extracted binary relations from the NewsSpike corpus into convE/dat
 
 Train convE model by running:
 
-    CUDA_VISIBLE_DEVICES=0 python3 convE/main.py model ConvE input_drop 0.2 hidden_drop 0.3 feat_drop 0.2 lr 0.003 lr_decay 0.995 dataset NS process True  mode train	
+    CUDA_VISIBLE_DEVICES=0 python3 convE/main.py model ConvE input_drop 0.2 hidden_drop 0.3 feat_drop 0.2 lr 0.003 lr_decay 0.995 dataset NS process True epochs 80 mode train
 
 ### Computing triple (link) probabilities for seen and unseen triples
 
