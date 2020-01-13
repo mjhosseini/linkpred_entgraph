@@ -12,13 +12,14 @@ Duality of Link Prediction and Entailment Graph Induction, Mohammad Javad Hossei
 
 **Install requirements**
 
+    cd linkpred_entgraph/
     sh requirements.sh
 
 **Prepare the data**
 
 Download the extracted binary relations from the NewsSpike corpus into convE/data:
 
-    cd linkpred_entgraph/
+    
     sh data.sh
 
 ### Running the code
