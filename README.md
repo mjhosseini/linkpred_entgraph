@@ -47,7 +47,7 @@ Build the entailment graphs by the Marcov Chain model (random walk) as well as t
     python randWalk/randWalkMatFactory.py --probs_file_path NS_probs_train.txt --triples_path convE/data/NS/train.txt --max_new_args 0 --entgraph_path typedEntGrDir_NS_train_MC
     python randWalk/randWalkMatFactory.py --probs_file_path NS_probs_train.txt --triples_path convE/data/NS/train.txt --max_new_args 50 --entgraph_path typedEntGrDir_NS_train_AUG_MC
 
-**On all triples**
+**On all triples:**
 
     python randWalk/randWalkMatFactory.py --probs_file_path NS_probs_all.txt --triples_path convE/data/NS/all.txt --max_new_args 0 --entgraph_path typedEntGrDir_NS_all_MC
     python randWalk/randWalkMatFactory.py --probs_file_path NS_probs_all.txt --triples_path convE/data/NS/all.txt --max_new_args 50 --entgraph_path typedEntGrDir_NS_all_AUG_MC
@@ -56,9 +56,13 @@ Build the entailment graphs by the Marcov Chain model (random walk) as well as t
 
 ### Evaluate the entailment graphs
 
-Please refer to https://github.com/mjhosseini/entgraph_eval. Use the learned entailment graphs (typedEntGrDir_NS_all_MC or typedEntGrDir_NS_all_AUG_MC) as the gpath parameter.
+Please refer to https://github.com/mjhosseini/entgraph_eval for evaluation.
+
+We can use the entailment graphs that are learned by accessing all the link prediction data as here we only evaluate the entailment task, not link prediction task. Use the learned entailment graphs (typedEntGrDir_NS_all_MC or typedEntGrDir_NS_all_AUG_MC) as the gpath parameter of the entgraph_eval project.
 
 ### Improve link prediction with entailment graphs
+
+We can use the entailment graphs that are learned by accessing only the link prediciton training data.
 
 Using entailment graphs with the Marcov Chain model (random walk):
 
