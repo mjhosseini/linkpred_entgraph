@@ -4,7 +4,7 @@ This is the implementation of the following ACL 2019 paper:
 
 ## Setup
 
-### Cloning the project and Installing the requirements
+### Cloning the project and installing the requirements
 
     git clone https://github.com/mjhosseini/linkpred_entgraph.git
     cd linkpred_entgraph/
