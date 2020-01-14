@@ -1,15 +1,9 @@
 
 <div class=figure>
   <p align="center"><img src="https://homepages.inf.ed.ac.uk/s1583634/images/toy_acl2019.jpg"
-    width="300" height=auto>
-  <p align="center">(A) Link Prediction, (B) Entailment Graph Induction
+    width="300" height=auto></p>
+  <p align="center"><small>*(A) Link Prediction, (B) Entailment Graph Induction*</small></p>
 </div>
-
-<p align="center">
-  <img width="300" height=auto src="https://homepages.inf.ed.ac.uk/s1583634/images/toy_acl2019.jpg">
-  <figcaption>(A) Link Prediction, (B) Entailment Graph Induction</figcaption>
-</p>
-
 
 This is the implementation of the following ACL 2019 paper:
 
