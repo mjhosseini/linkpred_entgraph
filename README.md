@@ -1,4 +1,4 @@
-![image](homepages.inf.ed.ac.uk/s1583634/images/concept_acl2019.pdf)
+![image](homepages.inf.ed.ac.uk/s1583634/images/img.jpg)
 
 
 This is the implementation of the following ACL 2019 paper:
