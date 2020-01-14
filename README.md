@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="460" height="300" src="https://homepages.inf.ed.ac.uk/s1583634/images/toy_acl2019.jpg">
+  <img width="460" height=auto src="https://homepages.inf.ed.ac.uk/s1583634/images/toy_acl2019.jpg">
 </p>
 
 
