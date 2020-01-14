@@ -5,7 +5,7 @@
   <p align="center"><small><i>(A) Link Prediction, (B) Entailment Graph Induction</i></small></p>
 </div>
 
-This is the implementation of the following ACL 2019 paper:
+This codbase contains the PyTorch implementation of the following paper:
 
 **Duality of Link Prediction and Entailment Graph Induction**, *Mohammad Javad Hosseini, Shay B. Cohen, Mark Johnson, and Mark Steedman. Association for Computational Linguistics (ACL 2019).* [[paper]](https://www.aclweb.org/anthology/P19-1468.pdf)
 
