@@ -42,6 +42,8 @@ Alternatively, you can copy the pre-trained model on the NewsSpike corpus:
 
 Build the entailment graphs by the Marcov Chain model (random walk) as well as the Marcov Chain model (random walk) + augmentation with new scores. The former is done by --max_new_args 0 and the latter is done by --max_new_args 50. 
 
+This step should be run on CPU, preferably with more than 100GB RAM (depending on the --max_new_args parameter).
+
 **Only for training triples:**
 
     python randWalk/randWalkMatFactory.py --probs_file_path NS_probs_train.txt --triples_path convE/data/NS/train.txt --max_new_args 0 --entgraph_path typedEntGrDir_NS_train_MC
