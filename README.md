@@ -1,4 +1,4 @@
-![image](homepages.inf.ed.ac.uk/s1583634/images/img.jpg)
+![image](https://homepages.inf.ed.ac.uk/s1583634/images/img.jpg)
 
 
 This is the implementation of the following ACL 2019 paper:
