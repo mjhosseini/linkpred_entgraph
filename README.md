@@ -1,7 +1,9 @@
+<p align="center">
 <figure align="center">
   <img width="300" height=auto src="https://homepages.inf.ed.ac.uk/s1583634/images/toy_acl2019.jpg">
   <figcaption>Fig.1 Image</figcaption>
 </figure>
+</p>
 
 
 This is the implementation of the following ACL 2019 paper:
