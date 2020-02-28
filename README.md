@@ -1,6 +1,6 @@
 
 <div class=figure>
-  <p align="center"><img src="https://homepages.inf.ed.ac.uk/s1583634/images/toy_acl2019.jpg"
+  <p align="center"><img src="https://homepages.inf.ed.ac.uk/s1583634/paper_images/toy_acl2019.jpg"
     width="300" height=auto></p>
   <p align="center"><small><i>(A) Link Prediction, (B) Entailment Graph Induction</i></small></p>
 </div>
