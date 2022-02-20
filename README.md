@@ -84,7 +84,7 @@ Please refer to https://github.com/mjhosseini/entGraph/ (step 6) for learning gl
 
 *constants.ConstantsSoftConst*:
 
-* lmbda=0, lmbda_2=1.5, epsilon=1.0, and tPropSuffix=""_lpred_conve_MC_lmbda_0_lmbda2_1.5_eps_1"" (or "_lpred_only_train_conve_MC_lmbda_0_lmbda2_1.5_eps_1").
+* lmbda=0, lmbda_2=1.5, epsilon=1.0, and tPropSuffix="_lpred_conve_MC_lmbda_0_lmbda2_1.5_eps_1" (or "_lpred_only_train_conve_MC_lmbda_0_lmbda2_1.5_eps_1").
 
 
 ## Evaluation
@@ -110,6 +110,15 @@ Using entailment graphs with the Marcov Chain model (random walk) + augmentation
     CUDA_VISIBLE_DEVICES=0 python3 convE/main.py model ConvE input_drop 0.2 hidden_drop 0.3 feat_drop 0.2 lr 0.003 lr_decay 0.995 dataset NS process True mode test_entgraphs entgraph_path typedEntGrDir_NS_train_AUG_MC 1>lpred_detailed_output_AUG_MC.txt 2>&1 &
     
 **Global Setting**
+
+Change the below
+
+https://github.com/mjhosseini/linkpred_entgraph/blob/master/convE/main.py#L63 and https://github.com/mjhosseini/linkpred_entgraph/blob/master/convE/main.py#L64
+
+to
+
+f_post_fix = "_lpred_only_train_conve_MC_lmbda_0_lmbda2_1.5_eps_1"
+featIdx = 1
 
 ## Citation
 
