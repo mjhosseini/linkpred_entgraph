@@ -60,6 +60,32 @@ This step should be run on CPU, preferably with more than 100GB RAM (depending o
 
     python randWalk/randWalkMatFactory.py --probs_file_path NS_probs_all.txt --triples_path convE/data/NS/all.txt --max_new_args 0 --entgraph_path typedEntGrDir_NS_all_MC
     python randWalk/randWalkMatFactory.py --probs_file_path NS_probs_all.txt --triples_path convE/data/NS/all.txt --max_new_args 50 --entgraph_path typedEntGrDir_NS_all_AUG_MC
+    
+### Learning global entailment graphs
+Please refer to https://github.com/mjhosseini/entGraph/ for learning global entailment graphs from local entailment graphs (the ones that were learned above).
+
+**We set the below parameters for the AUG models:**
+
+*constants.ConstantsGraphs*:
+
+* root=".../typedEntGrDir_NS_all_AUG_MC" (or ".../typedEntGrDir_NS_train_AUG_MC")
+* edgeThreshold=.0002
+
+*constants.ConstantsSoftConst*:
+
+* lmbda=.0002, lmbda_2=1.5, and epsilon=0.3
+
+**We set the below parameters for the non-AUG models:**
+
+*constants.ConstantsGraphs*:
+
+* root=".../typedEntGrDir_NS_all_MC" (or ".../typedEntGrDir_NS_train_MC")
+* edgeThreshold=0
+
+*constants.ConstantsSoftConst*:
+
+* lmbda=0, lmbda_2=1, and epsilon=1.0
+
 
 ## Evaluation
 
