@@ -73,7 +73,7 @@ Please refer to https://github.com/mjhosseini/entGraph/ (step 6) for learning gl
 
 *constants.ConstantsSoftConst*:
 
-* lmbda=.0002, lmbda_2=1.5, and epsilon=0.3
+* lmbda=.0002, lmbda_2=1, epsilon=0.3, and tPropSuffix="_lpred_conve_AUG_MC_lmbda_.0002_lmbda2_1_eps_.3" (or "_lpred_only_train_conve_AUG_MC_lmbda_.0002_lmbda2_1_eps_.3").
 
 **We set the below parameters for the non-AUG models:**
 
@@ -84,7 +84,7 @@ Please refer to https://github.com/mjhosseini/entGraph/ (step 6) for learning gl
 
 *constants.ConstantsSoftConst*:
 
-* lmbda=0, lmbda_2=1, and epsilon=1.0
+* lmbda=0, lmbda_2=1.5, epsilon=1.0, and tPropSuffix=""_lpred_conve_MC_lmbda_0_lmbda2_1.5_eps_1"" (or "_lpred_only_train_conve_MC_lmbda_0_lmbda2_1.5_eps_1").
 
 
 ## Evaluation
@@ -99,13 +99,17 @@ We can use the entailment graphs that are learned by accessing all the link pred
 
 We can use the entailment graphs that are learned by accessing only the link prediciton training data.
 
-Using entailment graphs with the Marcov Chain model (random walk):
+**Local Setting**
+
+Using entailment graphs with the Marcov Chain model (random walk)
 
     CUDA_VISIBLE_DEVICES=0 python3 convE/main.py model ConvE input_drop 0.2 hidden_drop 0.3 feat_drop 0.2 lr 0.003 lr_decay 0.995 dataset NS process True mode test_entgraphs entgraph_path typedEntGrDir_NS_train_MC 1>lpred_detailed_output_MC.txt 2>&1 &
 
-Using entailment graphs with the Marcov Chain model (random walk) + augmentation with new scores:
+Using entailment graphs with the Marcov Chain model (random walk) + augmentation with new scores
 
     CUDA_VISIBLE_DEVICES=0 python3 convE/main.py model ConvE input_drop 0.2 hidden_drop 0.3 feat_drop 0.2 lr 0.003 lr_decay 0.995 dataset NS process True mode test_entgraphs entgraph_path typedEntGrDir_NS_train_AUG_MC 1>lpred_detailed_output_AUG_MC.txt 2>&1 &
+    
+**Global Setting**
 
 ## Citation
 
