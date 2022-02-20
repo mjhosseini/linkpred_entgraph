@@ -62,7 +62,7 @@ This step should be run on CPU, preferably with more than 100GB RAM (depending o
     python randWalk/randWalkMatFactory.py --probs_file_path NS_probs_all.txt --triples_path convE/data/NS/all.txt --max_new_args 50 --entgraph_path typedEntGrDir_NS_all_AUG_MC
     
 ### Learning global entailment graphs
-Please refer to https://github.com/mjhosseini/entGraph/ for learning global entailment graphs from local entailment graphs (the ones that were learned above).
+Please refer to https://github.com/mjhosseini/entGraph/ (step 6) for learning global entailment graphs from local entailment graphs (the ones that were learned above).
 
 **We set the below parameters for the AUG models:**
 
