@@ -112,7 +112,7 @@ Using entailment graphs with the Marcov Chain model (random walk) + augmentation
 
 Change the below lines before running the two command lines above:
 
-https://github.com/mjhosseini/linkpred_entgraph/blob/master/convE/main.py#L63 and https://github.com/mjhosseini/linkpred_entgraph/blob/master/convE/main.py#L64:
+https://github.com/mjhosseini/linkpred_entgraph/blob/master/convE/main.py#L63 and https://github.com/mjhosseini/linkpred_entgraph/blob/master/convE/main.py#L64 :
 
 f_post_fix = "_lpred_conve_MC_lmbda_0_lmbda2_1.5_eps_1"
 
