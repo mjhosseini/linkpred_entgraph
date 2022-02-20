@@ -114,11 +114,11 @@ Change the below lines before running the two command lines above:
 
 https://github.com/mjhosseini/linkpred_entgraph/blob/master/convE/main.py#L63 and https://github.com/mjhosseini/linkpred_entgraph/blob/master/convE/main.py#L64 :
 
-f_post_fix = "\_lpred_conve_MC_lmbda_0_lmbda2_1.5_eps_1" (for the MC model)
+L63: f_post_fix = "\_lpred_conve_MC_lmbda_0_lmbda2_1.5_eps_1" (for the MC model)
 
-f_post_fix = "\_lpred_conve_AUG_MC_lmbda_.0002_lmbda2_1_eps_.3" (for the AUG MC model)
+L63: f_post_fix = "\_lpred_conve_AUG_MC_lmbda_.0002_lmbda2_1_eps_.3" (for the AUG MC model)
 
-featIdx = 1
+L64: featIdx = 1
 
 ## Citation
 
