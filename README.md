@@ -64,18 +64,7 @@ This step should be run on CPU, preferably with more than 100GB RAM (depending o
 ### Learning global entailment graphs
 Please refer to https://github.com/mjhosseini/entGraph/ (step 6) for learning global entailment graphs from local entailment graphs (the ones that were learned above).
 
-**We set the below parameters for the AUG models:**
-
-*constants.ConstantsGraphs*:
-
-* root=".../typedEntGrDir_NS_all_AUG_MC" (or ".../typedEntGrDir_NS_train_AUG_MC")
-* edgeThreshold=.0002
-
-*constants.ConstantsSoftConst*:
-
-* lmbda=.0002, lmbda_2=1, epsilon=0.3, and tPropSuffix="_lpred_conve_AUG_MC_lmbda_.0002_lmbda2_1_eps_.3" (or "_lpred_only_train_conve_AUG_MC_lmbda_.0002_lmbda2_1_eps_.3").
-
-**We set the below parameters for the non-AUG models:**
+**We set the below parameters for the MC models:**
 
 *constants.ConstantsGraphs*:
 
@@ -84,8 +73,18 @@ Please refer to https://github.com/mjhosseini/entGraph/ (step 6) for learning gl
 
 *constants.ConstantsSoftConst*:
 
-* lmbda=0, lmbda_2=1.5, epsilon=1.0, and tPropSuffix="_lpred_conve_MC_lmbda_0_lmbda2_1.5_eps_1" (or "_lpred_only_train_conve_MC_lmbda_0_lmbda2_1.5_eps_1").
+* lmbda=0, lmbda_2=1.5, epsilon=1.0, and tPropSuffix="_lpred_conve_MC_lmbda_0_lmbda2_1.5_eps_1".
 
+**We set the below parameters for the AUG MC models:**
+
+*constants.ConstantsGraphs*:
+
+* root=".../typedEntGrDir_NS_all_AUG_MC" (or ".../typedEntGrDir_NS_train_AUG_MC")
+* edgeThreshold=.0002
+
+*constants.ConstantsSoftConst*:
+
+* lmbda=.0002, lmbda_2=1, epsilon=0.3, and tPropSuffix="_lpred_conve_AUG_MC_lmbda_.0002_lmbda2_1_eps_.3".
 
 ## Evaluation
 
@@ -111,13 +110,14 @@ Using entailment graphs with the Marcov Chain model (random walk) + augmentation
     
 **Global Setting**
 
-Change the below
+Change the below lines
 
 https://github.com/mjhosseini/linkpred_entgraph/blob/master/convE/main.py#L63 and https://github.com/mjhosseini/linkpred_entgraph/blob/master/convE/main.py#L64
 
 to
 
-f_post_fix = "_lpred_only_train_conve_MC_lmbda_0_lmbda2_1.5_eps_1"
+f_post_fix = "_lpred_conve_MC_lmbda_0_lmbda2_1.5_eps_1"
+
 featIdx = 1
 
 ## Citation
