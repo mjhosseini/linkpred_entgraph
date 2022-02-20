@@ -105,7 +105,7 @@ Using entailment graphs with the Marcov Chain model (random walk):
 
 Using entailment graphs with the Marcov Chain model (random walk) + augmentation with new scores:
 
-    CUDA_VISIBLE_DEVICES=0 python3 convE/main.py model ConvE input_drop 0.2 hidden_drop 0.3 feat_drop 0.2 lr 0.003 lr_decay 0.995 dataset NS process True mode test_entgraphs entgraph_path typedEntGrDir_NS_all_MC 1>lpred_detailed_output_MC.txt 2>&1 &
+    CUDA_VISIBLE_DEVICES=0 python3 convE/main.py model ConvE input_drop 0.2 hidden_drop 0.3 feat_drop 0.2 lr 0.003 lr_decay 0.995 dataset NS process True mode test_entgraphs entgraph_path typedEntGrDir_NS_train_AUG_MC 1>lpred_detailed_output_AUG_MC.txt 2>&1 &
 
 ## Citation
 
